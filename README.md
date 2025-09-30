@@ -16,55 +16,74 @@ This boilerplate sets up:
 
 Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org) (v14 or above)
+- [Node.js](https://nodejs.org) (v22 recommended with vite)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ---
 
 ### Clone, Install & Run
 
+#### 1. Clone the repo
 ```bash
-# 1. Clone the repo
 git clone https://github.com/CainWasSlain/Vite-React-Express-Boilerplate
 cd vite-react-express-boilerplate
+```
 
-# 2. Install dependencies for both frontend and backend
+#### 2. Install dependencies for both frontend and backend
+```bash
 npm run superinstall
+```
 
-# 3. Copy example .env files
+#### 3. Copy example .env files
+```bash
 cp app/frontend/.env.example app/frontend/.env
 cp app/backend/.env.example app/backend/.env
+```
 
-# 4. Edit the .env files with your config
+#### 4. Edit the .env files with your config
 
-# On Windows:
+##### On Windows:
+```bash
 notepad app/frontend/.env
 notepad app/backend/.env
+```
 
-# On Linux/macOS:
+##### On Linux/macOS:
+```bash
 vim app/frontend/.env
 vim app/backend/.env
+```
 
-# 5. Start development servers (frontend + backend)
+#### 5. Start development servers (frontend + backend)
+```bash
 npm run dev
 ```
 ---
 
 ### Running the project 
+
+#### Development Mode
 ```bash
-# Development Mode
 npm run dev
+```
 
-# Backend Only
+#### Backend Only
+```bash
 npm run dev:backend
+```
 
-# Frontend Only
+#### Frontend Only
+```bash
 npm run dev:frontend
+```
 
-# Build for production
+#### Build for production
+```bash
 npm run build
+```
 
-# Start production server(Run only after build)
+#### Start production server(Run only after build)
+```bash
 npm start
 ```
 
@@ -76,6 +95,9 @@ Enhance your workflow with these handy tools:
 
 - **[Visual Studio Code](https://code.visualstudio.com/)**  
   A powerful, extensible code editor with great support for JavaScript, React, and Node.js.
+
+- **[nvm (Node Version Manager)](https://github.com/nvm-sh/nvm)**  
+  A tool that allows you to install and switch between multiple Node.js versions easily.
 
 - **[Postman](https://www.postman.com/downloads/)**  
   A versatile API client to design, test, and debug your backend endpoints effortlessly.
