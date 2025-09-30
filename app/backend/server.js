@@ -1,12 +1,13 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const PORT = 5000;
-
+const cors = require('cors');
+const PORT =  process.env.PORT || 5000;
+const routes = require('./routes/Routes');
 app.use(express.json());
+app.use(cors());
 
-app.get('/api', (req, res) => {
-  res.json({ message: 'Hello from backend!' });
-});
+app.use('/api', routes);
 
 app.listen(PORT, () => {
   console.log(`Backend listening at http://localhost:${PORT}`);

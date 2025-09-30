@@ -13,7 +13,7 @@ yarn.lock
 pnpm-lock.yaml
 
 # Dependency directories
-node_modules
+node_modules/
 dist
 dist-ssr
 *.local
@@ -28,3 +28,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment files
+.env

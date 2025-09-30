@@ -1,8 +1,9 @@
 {
-  "name": "forest-divison-dashboard",
+  "name": "Vite-Express-Boilerplate",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
+    "superinstall": "npm install && npm install --prefix app/frontend && npm install --prefix app/backend",
     "dev": "concurrently \"npm run dev --prefix app/frontend\" \"npm run dev --prefix app/backend\"",
     "build": "npm run build --prefix app/frontend",
     "start": "npm run start --prefix app/backend"
