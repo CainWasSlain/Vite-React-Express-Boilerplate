@@ -14,7 +14,7 @@ pnpm-lock.yaml
 
 # Dependency directories
 node_modules/
-dist
+dist/
 dist-ssr
 *.local
 
